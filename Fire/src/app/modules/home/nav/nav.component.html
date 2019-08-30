@@ -3,19 +3,11 @@
       <a>FIRE</a>
       <nav>
         <ul>
-          <li>
-            <a routerLink="/schema1">schema 1</a>
-          </li>
-          <li>
-            <a routerLink="/schema2">schema 2</a>
-          </li>
-          <li>
-            <a routerLink="/resolution">schema 3</a>
-          </li>
+          <li><a routerLink="/schema1">schema 1</a></li>
+          <li><a routerLink="/schema2">schema 2</a></li>
+          <li><a routerLink="/schema3">schema 3</a></li>
           <li><a routerLink="/contact">Contact</a></li>
-  
           <li><a routerLink="/login">Login</a></li>
-  
           <li *ngIf="authService.isLoggedIn()">
             <a (click)="authService.logout()">Logout</a>
           </li>
