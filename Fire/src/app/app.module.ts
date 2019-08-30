@@ -8,6 +8,10 @@ import { Schema1Component } from './modules/home/pages/schema1/schema1.component
 import { Schema2Component } from './modules/home/pages/schema2/schema2.component';
 import { Schema3Component } from './modules/home/pages/schema3/schema3.component';
 import { ContactComponent } from './modules/home/pages/contact/contact.component';
+import { HorButtonGroupComponent } from './modules/home/pages/schema1/hor-button-group/hor-button-group.component';
+import { VerButtonGropuComponent } from './modules/home/pages/schema1/ver-button-gropu/ver-button-gropu.component';
+import { ZlButtonComponent } from './modules/home/pages/schema1/hor-button-group/zl-button/zl-button.component';
+import { HeightButtonComponent } from './modules/home/pages/schema1/ver-button-gropu/height-button/height-button.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { ContactComponent } from './modules/home/pages/contact/contact.component
     Schema1Component,
     Schema2Component,
     Schema3Component,
-    ContactComponent
+    ContactComponent,
+    HorButtonGroupComponent,
+    VerButtonGropuComponent,
+    ZlButtonComponent,
+    HeightButtonComponent
   ],
   imports: [
     BrowserModule,
