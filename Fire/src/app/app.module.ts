@@ -12,6 +12,7 @@ import { HorButtonGroupComponent } from './modules/home/pages/schema1/hor-button
 import { VerButtonGropuComponent } from './modules/home/pages/schema1/ver-button-gropu/ver-button-gropu.component';
 import { ZlButtonComponent } from './modules/home/pages/schema1/hor-button-group/zl-button/zl-button.component';
 import { HeightButtonComponent } from './modules/home/pages/schema1/ver-button-gropu/height-button/height-button.component';
+import { TableComponent } from './modules/home/pages/schema1/table/table.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HeightButtonComponent } from './modules/home/pages/schema1/ver-button-g
     HorButtonGroupComponent,
     VerButtonGropuComponent,
     ZlButtonComponent,
-    HeightButtonComponent
+    HeightButtonComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

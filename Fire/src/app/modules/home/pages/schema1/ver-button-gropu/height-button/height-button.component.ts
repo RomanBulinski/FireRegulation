@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input} from '@angular/core';
 
 @Component({
   selector: 'app-height-button',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./height-button.component.scss']
 })
 export class HeightButtonComponent implements OnInit {
+  @Input() buttonLabel: string;
 
   constructor() { }
 

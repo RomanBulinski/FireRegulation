@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-zl-button',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./zl-button.component.scss']
 })
 export class ZlButtonComponent implements OnInit {
+  @Input() buttonLabel: string;
 
   constructor() { }
 
