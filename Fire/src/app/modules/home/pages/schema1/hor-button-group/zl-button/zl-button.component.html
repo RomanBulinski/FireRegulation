@@ -1,3 +1,7 @@
 
-<button class="btn btn-rounded btn-info btn-sm">{{ buttonLabel }}</button>
+<div (click)="changeColor()" 
+    [className]="buttonOn ? 'onselected' : 'selected'"
+    className="onselected"
+    >{{ buttonLabel }}
+</div>
 
