@@ -7,9 +7,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HorButtonGroupComponent implements OnInit {
 
-  constructor() { }
+  // buttonOn = false;
+  switcher = { ZLI:false, ZLII:false, ZLIII:false, ZLIV:false, ZLV:false};
 
+  constructor() { }
+ 
   ngOnInit() {
   }
+
+  switchButtons(voteType: string) {
+    if (voteType == "ZLI") {
+      this.switcher = { ZLI:true, ZLII:false, ZLIII:false, ZLIV:false, ZLV:false};
+    }
+    if (voteType == "ZLII") {
+      this.switcher = { ZLI:false, ZLII:true, ZLIII:false, ZLIV:false, ZLV:false};
+    }
+    if (voteType == "ZLIII") {
+      this.switcher = { ZLI:false, ZLII:false, ZLIII:true, ZLIV:false, ZLV:false};
+    }
+    if (voteType == "ZLIV") {
+      this.switcher = { ZLI:false, ZLII:false, ZLIII:false, ZLIV:true, ZLV:false};
+    }
+    if (voteType == "ZLV") {
+      this.switcher = { ZLI:false, ZLII:false, ZLIII:false, ZLIV:false, ZLV:true};
+    }
+  }
+
+  getFromSwitcherValueByKey(key: string) {
+    return this.switcher[key];
+  }
+
+  // changeButtonColor(){
+  //   if (this.buttonOn == true) {
+  //     this.buttonOn = false;
+  //   } else if (this.buttonOn == false) {
+  //     this.buttonOn = true;
+  //   }
+  // }
+
+
+
 
 }

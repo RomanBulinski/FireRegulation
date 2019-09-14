@@ -3,19 +3,28 @@
 
     <div class="row margin">
         <app-zl-button buttonLabel="ZL I"
-        buttonOn = "true"></app-zl-button>
+        (click)="switchButtons('ZLI')"
+        [buttonOn]="getFromSwitcherValueByKey('ZLI')"> </app-zl-button>
     </div>
     <div class="row margin">
-            <app-zl-button buttonLabel="ZL II"></app-zl-button>
+        <app-zl-button buttonLabel="ZL II"
+        (click)="switchButtons('ZLII')"
+        [buttonOn]="getFromSwitcherValueByKey('ZLII')"></app-zl-button>
     </div>
     <div class="row margin">
-            <app-zl-button buttonLabel="ZL III"></app-zl-button>
+        <app-zl-button buttonLabel="ZL III"   
+        (click)="switchButtons('ZLIII')"
+        [buttonOn]="getFromSwitcherValueByKey('ZLIII')"></app-zl-button>
     </div>
     <div class="row margin">
-            <app-zl-button buttonLabel="ZL IV"></app-zl-button>
+        <app-zl-button buttonLabel="ZL IV"   
+        (click)="switchButtons('ZLIV')"
+        [buttonOn]="getFromSwitcherValueByKey('ZLIV')"></app-zl-button>
     </div>
     <div class="row margin">
-            <app-zl-button buttonLabel="ZL V"></app-zl-button>
+        <app-zl-button buttonLabel="ZL V"   
+        (click)="switchButtons('ZLV')"
+        [buttonOn]="getFromSwitcherValueByKey('ZLV')"></app-zl-button>
     </div>
 
 </div>
