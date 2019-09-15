@@ -9,6 +9,14 @@ export class TableComponent implements OnInit {
 
   constructor() { }
 
+  
+
+  ZLV_N = true;
+  ZLV_SW = true;
+  ZLV_W = true;
+  ZLV_WW = true;
+
+
   ngOnInit() {
   }
 
