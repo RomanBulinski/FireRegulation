@@ -7,10 +7,19 @@ import { Component, OnInit , Input} from '@angular/core';
 })
 export class HeightButtonComponent implements OnInit {
   @Input() buttonLabel: string;
+  @Input() buttonOn: boolean;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  changeColor() {
+    if (this.buttonOn == true) {
+      this.buttonOn = false;
+    } else if (this.buttonOn == false) {
+      this.buttonOn = true;
+    }
   }
 
 }

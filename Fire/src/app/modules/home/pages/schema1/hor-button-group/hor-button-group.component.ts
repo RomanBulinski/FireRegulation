@@ -37,15 +37,4 @@ export class HorButtonGroupComponent implements OnInit {
     return this.switcher[key];
   }
 
-  // changeButtonColor(){
-  //   if (this.buttonOn == true) {
-  //     this.buttonOn = false;
-  //   } else if (this.buttonOn == false) {
-  //     this.buttonOn = true;
-  //   }
-  // }
-
-
-
-
 }

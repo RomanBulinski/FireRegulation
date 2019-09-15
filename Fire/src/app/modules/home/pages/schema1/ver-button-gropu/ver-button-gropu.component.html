@@ -5,7 +5,9 @@
                 4 Kondygnajce
         </div>
         <div class="row">
-                <app-height-button  buttonLabel="N"></app-height-button>
+                <app-height-button  buttonLabel="N"
+                (click)="switchButtons('N')"
+                [buttonOn]="getFromSwitcherValueByKey('N')"></app-height-button>
         </div>
     </div>
 
@@ -14,7 +16,9 @@
                 4-9 Kondygnacji
         </div>
         <div class="row">
-            <app-height-button  buttonLabel="SW"></app-height-button>
+            <app-height-button  buttonLabel="SW"
+                (click)="switchButtons('SW')"
+                [buttonOn]="getFromSwitcherValueByKey('SW')"></app-height-button>
         </div>
     </div>
 
@@ -23,7 +27,9 @@
                 9-18 Kondygnacji
         </div>
         <div class="row">
-                <app-height-button  buttonLabel="W"></app-height-button>
+                <app-height-button  buttonLabel="W"
+                (click)="switchButtons('W')"
+                [buttonOn]="getFromSwitcherValueByKey('W')"></app-height-button>
         </div>  
     </div>
 
@@ -32,7 +38,9 @@
                 9-18 Kondygnacji
         </div>
         <div class="row">
-                <app-height-button  buttonLabel="WW"></app-height-button>
+                <app-height-button  buttonLabel="WW"
+                (click)="switchButtons('WW')"
+                [buttonOn]="getFromSwitcherValueByKey('WW')"></app-height-button>
         </div>  
     </div>
 
