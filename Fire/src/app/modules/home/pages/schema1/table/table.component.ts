@@ -23,7 +23,6 @@ export class TableComponent implements OnInit {
   ngOnInit() {
   }
 
-  
   ngOnChanges(){
     this.setAllFalseInTable()
     this.setValueInTable(this.passInfo)
