@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-table',
@@ -7,17 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableComponent implements OnInit {
 
-  constructor() { }
+  valueTable ={ ZLI_N:false, ZLII_N:false, ZLIII_N:false, ZLIV_N:false, ZLV_N:false,
+                ZLI_SW:false, ZLII_SW:false, ZLIII_SW:false, ZLIV_SW:false, ZLV_SW:false,
+                ZLI_W:false, ZLII_W:false, ZLIII_W:false, ZLIV_W:false, ZLV_W:false,
+                ZLI_WW:false, ZLII_WW:false, ZLIII_WW:false, ZLIV_WW:false, ZLV_WW:false }
 
+  getValueFromTable(value: string){
+     return this.valueTable[value]
+  }
   
+  @Input() passInfo: string;
 
-  ZLV_N = true;
-  ZLV_SW = true;
-  ZLV_W = true;
-  ZLV_WW = true;
-
+  constructor() { }
 
   ngOnInit() {
   }
+
+  
+  ngOnChanges(){
+    this.setAllFalseInTable()
+    this.setValueInTable(this.passInfo)
+    // console.log(this.passInfo)
+  }
+
+  setValueInTable(passInfo: string){
+    this.valueTable[passInfo]=true;
+  }
+
+  setAllFalseInTable(){
+    this.valueTable ={ ZLI_N:false, ZLII_N:false, ZLIII_N:false, ZLIV_N:false, ZLV_N:false,
+      ZLI_SW:false, ZLII_SW:false, ZLIII_SW:false, ZLIV_SW:false, ZLV_SW:false,
+      ZLI_W:false, ZLII_W:false, ZLIII_W:false, ZLIV_W:false, ZLV_W:false,
+      ZLI_WW:false, ZLII_WW:false, ZLIII_WW:false, ZLIV_WW:false, ZLV_WW:false }
+  }
+
 
 }

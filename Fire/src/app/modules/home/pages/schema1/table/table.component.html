@@ -1,48 +1,34 @@
 
 
-
-
 <div >
-
     <div class="row margin" >
-        <div class="cell">D,C,B</div>
-        <div class="cell">B</div>
-        <div class="cell">B</div>
-        <div class="cell">A</div>
+        <div [className]="getValueFromTable('ZLI_N') ? 'rightcell' : 'cell'">D,C,B</div>
+        <div [className]="getValueFromTable('ZLI_SW') ? 'rightcell' : 'cell'">B</div>
+        <div [className]="getValueFromTable('ZLI_W') ? 'rightcell' : 'cell'">>B</div>
+        <div [className]="getValueFromTable('ZLI_WW') ? 'rightcell' : 'cell'">A</div>
     </div>
     <div class="row margin" >
-        <div class="cell">D,C,B</div>
-        <div class="cell">B</div>
-        <div class="cell">B</div>
-        <div class="cell">A</div>
+        <div [className]="getValueFromTable('ZLII_N') ? 'rightcell' : 'cell'">D,C,B</div>
+        <div [className]="getValueFromTable('ZLII_SW') ? 'rightcell' : 'cell'">B</div>
+        <div [className]="getValueFromTable('ZLII_W') ? 'rightcell' : 'cell'">B</div>
+        <div [className]="getValueFromTable('ZLII_WW') ? 'rightcell' : 'cell'">A</div>
     </div>
     <div class="row margin">
-        <div class="cell">D,D,C</div>
-        <div class="cell">B</div>
-        <div class="cell">B</div>
-        <div class="cell">A</div>
+        <div [className]="getValueFromTable('ZLIII_N') ? 'rightcell' : 'cell'">D,D,C</div>
+        <div [className]="getValueFromTable('ZLIII_SW') ? 'rightcell' : 'cell'">B</div>
+        <div [className]="getValueFromTable('ZLIII_W') ? 'rightcell' : 'cell'">B</div>
+        <div [className]="getValueFromTable('ZLIII_WW') ? 'rightcell' : 'cell'">A</div>
     </div>
-
     <div class="row margin">
-        <div class="cell">D</div>
-        <div class="cell">C</div>
-        <div class="cell">B</div>
-        <div class="cell">A</div>
+        <div [className]="getValueFromTable('ZLIV_N') ? 'rightcell' : 'cell'">D</div>
+        <div [className]="getValueFromTable('ZLIV_SW') ? 'rightcell' : 'cell'">C</div>
+        <div [className]="getValueFromTable('ZLIV_W') ? 'rightcell' : 'cell'">B</div>
+        <div [className]="getValueFromTable('ZLIV_WW') ? 'rightcell' : 'cell'">A</div>
     </div>
-
     <div class="row margin">
-        <div 
-        [className]="ZLV_N ? 'rightcell' : 'cell'">
-        C</div>
-        <div 
-        [className]="ZLV_SW ? 'rightcell' : 'cell'">
-        B</div>
-        <div 
-        [className]="ZLV_W ? 'rightcell' : 'cell'">
-        B</div>
-        <div 
-        [className]="ZLV_WW ? 'rightcell' : 'cell'"
-        >A</div>
+        <div [className]="getValueFromTable('ZLV_N') ? 'rightcell' : 'cell'">C</div>
+        <div [className]="getValueFromTable('ZLV_SW') ? 'rightcell' : 'cell'">B</div>
+        <div [className]="getValueFromTable('ZLV_W') ? 'rightcell' : 'cell'">B</div>
+        <div [className]="getValueFromTable('ZLV_WW') ? 'rightcell' : 'cell'">A</div>
     </div>
-
 </div>

@@ -16,7 +16,10 @@
                 (messageEventHeight)="receiveHeight($event)"></app-ver-button-gropu>
             </div>
             <div class="row margin field">
-                <app-table></app-table>
+                <app-table
+        
+                [passInfo]="getInfo(buildingType)"
+                ></app-table>
             </div>
         </div>
     </div>

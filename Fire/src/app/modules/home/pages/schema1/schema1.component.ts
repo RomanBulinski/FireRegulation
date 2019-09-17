@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ɵINTERNAL_BROWSER_PLATFORM_PROVIDERS } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-schema1',
@@ -12,18 +13,35 @@ export class Schema1Component implements OnInit {
   ngOnInit() {
   }
 
+  ngOnChanges() {
+  }
+
   zltype: string;
   heighttype: string;
+  buildingType: string;  
 
   receiveZL($event) {
     this.zltype = $event;
-    console.log(this.zltype);
+    this.buildingType = $event+"_"+this.heighttype;
+    // console.log(this.zltype);
   }
 
   receiveHeight($event) {
     this.heighttype = $event;
-    console.log(this.heighttype);
+    this.buildingType = this.zltype+"_"+$event;
+    // console.log(this.heighttype);
   }
 
+  // getCrossCheck(){
+  //   return true;
+  // }
 
+  // getZLHeight(zltype: string, heighttype:string){
+  //   // console.log(zltype+"_"+heighttype);
+  //   return zltype+"_"+heighttype;
+  // }
+
+  getInfo(info:string){
+    return info;
+  }
 }
