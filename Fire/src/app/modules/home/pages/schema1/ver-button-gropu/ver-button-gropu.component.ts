@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
+
 @Component({
   selector: 'app-ver-button-gropu',
   templateUrl: './ver-button-gropu.component.html',

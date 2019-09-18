@@ -6,23 +6,22 @@
         
             </div>
             <div class="row margin field">
-                <app-hor-button-group
-                (messageEventZL)="receiveZL($event)"></app-hor-button-group>
+                <app-hor-button-group (messageEventZL)="receiveZL($event)"></app-hor-button-group>
+            
             </div>
         </div>
         <div >
             <div class="row margin field width200">
-                <app-ver-button-gropu
-                (messageEventHeight)="receiveHeight($event)"></app-ver-button-gropu>
+                <app-ver-button-gropu (messageEventHeight)="receiveHeight($event)"></app-ver-button-gropu>
             </div>
             <div class="row margin field">
-                <app-table
-        
-                [passInfo]="getInfo(buildingType)"
-                ></app-table>
+                <app-table [passInfo]="getInfo(buildingType)"></app-table>
             </div>
         </div>
     </div>
+
+   
+
 
 
   

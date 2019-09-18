@@ -2,11 +2,16 @@
     display: block;
 }
 
-.cell{
+.cell{  
     color: white;
     height: 50px;
-    width: 100px;
+    // width: 100px;
     padding: 5px;
     margin:10px;
     // background-color: grey;
 }
+
+.row {
+    display: inline-block;
+  }
+

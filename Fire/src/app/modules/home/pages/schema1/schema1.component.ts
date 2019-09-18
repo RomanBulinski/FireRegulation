@@ -32,15 +32,6 @@ export class Schema1Component implements OnInit {
     // console.log(this.heighttype);
   }
 
-  // getCrossCheck(){
-  //   return true;
-  // }
-
-  // getZLHeight(zltype: string, heighttype:string){
-  //   // console.log(zltype+"_"+heighttype);
-  //   return zltype+"_"+heighttype;
-  // }
-
   getInfo(info:string){
     return info;
   }
