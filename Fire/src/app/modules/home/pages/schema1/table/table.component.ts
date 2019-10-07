@@ -1,4 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {MatGridListModule} from '@angular/material/grid-list';
+// import {MatButtonModule} from '@angular/material/button';
+// import {MatCheckboxModule} from '@angular/material/checkbox';
+
+
 
 @Component({
   selector: 'app-table',

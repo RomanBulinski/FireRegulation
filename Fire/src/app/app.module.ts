@@ -13,6 +13,14 @@ import { VerButtonGropuComponent } from './modules/home/pages/schema1/ver-button
 import { ZlButtonComponent } from './modules/home/pages/schema1/hor-button-group/zl-button/zl-button.component';
 import { HeightButtonComponent } from './modules/home/pages/schema1/ver-button-gropu/height-button/height-button.component';
 import { TableComponent } from './modules/home/pages/schema1/table/table.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatSliderModule } from '@angular/material/slider';
+
+import {MatGridListModule} from '@angular/material'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -27,12 +35,22 @@ import { TableComponent } from './modules/home/pages/schema1/table/table.compone
     ZlButtonComponent,
     HeightButtonComponent,
     TableComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule, 
+    MatCheckboxModule,
+    MatSliderModule,
+    MatGridListModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
