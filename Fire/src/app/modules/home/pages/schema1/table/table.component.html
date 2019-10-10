@@ -1,8 +1,11 @@
 
 
-<mat-grid-list cols="5" rowHeight="2:1" rowHeight="50" class ="span400">
+ <!-- [colspan]="tile.cols"
+ [rowspan]="tile.rows" -->
 
-    <mat-grid-tile><div [className]="getValueFromTable('ZLI_N') ? 'rightcell' : 'cell'">D,C,B</div></mat-grid-tile>
+<mat-grid-list cols="5" rowHeight="fit" class="span400" >
+
+    <mat-grid-tile ><div [className]="getValueFromTable('ZLI_N') ? 'rightcell' : 'cell'">D,C,B</div></mat-grid-tile>
     <mat-grid-tile><div [className]="getValueFromTable('ZLII_N') ? 'rightcell' : 'cell'">D,C,B</div></mat-grid-tile>
     <mat-grid-tile><div [className]="getValueFromTable('ZLIII_N') ? 'rightcell' : 'cell'">D,D,C</div></mat-grid-tile>
     <mat-grid-tile><div [className]="getValueFromTable('ZLIV_N') ? 'rightcell' : 'cell'">D</div></mat-grid-tile>

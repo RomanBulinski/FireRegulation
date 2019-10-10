@@ -1,26 +1,24 @@
 
 
-    <div>
-        <div >
-            <div class="row margin field width200">
-        
-            </div>
-            <div class="row margin field">
-                <app-hor-button-group (messageEventZL)="receiveZL($event)"></app-hor-button-group>
-            
-            </div>
-        </div>
-        <div >
-            <div class="row margin field width200">
-                <app-ver-button-gropu (messageEventHeight)="receiveHeight($event)"></app-ver-button-gropu>
-            </div>
-            <div class="row margin field">
-                <app-table [passInfo]="getInfo(buildingType)"></app-table>
-            </div>
-        </div>
-    </div>
-
-   
+    <mat-grid-list cols = "4" rowHeight = "100px">
+        <mat-grid-tile [colspan] = "1"[rowspan] = "1">1
+        </mat-grid-tile>
+        <mat-grid-tile [colspan] = "3"[rowspan] = "1">
+                <div class="row margin field">
+                        <app-hor-button-group (messageEventZL)="receiveZL($event)"></app-hor-button-group>
+                    </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan] = "1" [rowspan] = "4">
+                <div class="row margin field width200">
+                        <app-ver-button-gropu (messageEventHeight)="receiveHeight($event)"></app-ver-button-gropu>
+                    </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan] = "3" [rowspan] = "4">
+                <div class="row margin field">
+                        <app-table [passInfo]="getInfo(buildingType)"></app-table>
+                    </div>
+        </mat-grid-tile>
+     </mat-grid-list>
 
 
 
