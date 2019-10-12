@@ -1,6 +1,4 @@
-.column {
-    display: block;
-}
+
 
 .cell{  
     color: white;
@@ -11,7 +9,12 @@
     // background-color: grey;
 }
 
-.row {
-    display: inline-block;
-  }
+  
+.height400{
+    height: 400px;
+    width: 200px;
+}
 
+mat-grid-tile {
+    background: lightgreen;
+}

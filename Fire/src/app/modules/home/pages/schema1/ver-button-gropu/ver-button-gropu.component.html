@@ -1,50 +1,33 @@
-<div>
-    
-    <div class="cell">
-        <div class="row blackText">
-                4 Kondygnajce
-        </div>
-        <div class="row">
-                <app-height-button  buttonLabel="N"
-                (click)="switchButtons('N')"
-                [buttonOn]="getFromSwitcherValueByKey('N')"></app-height-button>
-        </div>
-    </div>
 
-    <div class="cell">
-        <div class="row blackText">
-                4-9 Kondygnacji
-        </div>
-        <div class="row">
-            <app-height-button  buttonLabel="SW"
-                (click)="switchButtons('SW')"
-                [buttonOn]="getFromSwitcherValueByKey('SW')"></app-height-button>
-        </div>
-    </div>
 
-    <div class="cell">
-        <div class="row blackText">
-                9-18 Kondygnacji
-        </div>
-        <div class="row">
-                <app-height-button  buttonLabel="W"
-                (click)="switchButtons('W')"
-                [buttonOn]="getFromSwitcherValueByKey('W')"></app-height-button>
-        </div>  
-    </div>
+<div class="height400">
 
-    <div class="cell">
-        <div class="row blackText">
-                9-18 Kondygnacji
-        </div>
-        <div class="row">
-                <app-height-button  buttonLabel="WW"
-                (click)="switchButtons('WW')"
-                [buttonOn]="getFromSwitcherValueByKey('WW')"></app-height-button>
-        </div>  
-    </div>
-
+        <mat-grid-list cols = "2" rowHeight = "50px"  >
+                <mat-grid-tile [colspan] = "1"[rowspan] = "1">do 4 Kondygnacji</mat-grid-tile>
+                <mat-grid-tile [colspan] = "1"[rowspan] = "1">   <app-height-button  buttonLabel="N"
+                        (click)="switchButtons('N')"
+                        [buttonOn]="getFromSwitcherValueByKey('N')"></app-height-button></mat-grid-tile>
+        
+                <mat-grid-tile [colspan] = "1" [rowspan] = "1">4-9 Kondygnacji</mat-grid-tile>
+                <mat-grid-tile [colspan] = "1" [rowspan] = "1">
+                        <app-height-button  buttonLabel="SW"
+                                (click)="switchButtons('SW')"
+                                [buttonOn]="getFromSwitcherValueByKey('SW')"></app-height-button></mat-grid-tile>
+        
+                <mat-grid-tile [colspan] = "1" [rowspan] = "1">9-18 Kondygnacji / 25-55m</mat-grid-tile>
+                <mat-grid-tile [colspan] = "1" [rowspan] = "1">             
+                        <app-height-button  buttonLabel="W"
+                                (click)="switchButtons('W')"
+                                [buttonOn]="getFromSwitcherValueByKey('W')"></app-height-button></mat-grid-tile>
+        
+                <mat-grid-tile [colspan] = "1" [rowspan] = "1">powyzej 55m</mat-grid-tile>
+                <mat-grid-tile [colspan] = "1" [rowspan] = "1">               
+                        <app-height-button  buttonLabel="WW"
+                                (click)="switchButtons('WW')"
+                                [buttonOn]="getFromSwitcherValueByKey('WW')"></app-height-button></mat-grid-tile>
+        </mat-grid-list>
 </div>
+
 
 
 
