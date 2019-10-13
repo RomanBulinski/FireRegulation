@@ -3,7 +3,7 @@
     color: white;
     padding: 6px;
     border-radius: 10px;
-    width: 100px;
+    // width: 100px;
     margin: 3px;
   }
   .onselected {
@@ -11,6 +11,14 @@
     color: yellow;
     padding: 6px;
     border-radius: 10px;
-    width: 100px;
+    // width: 100px;
     margin: 3px;
+    
+  }
+
+  .widthauto{
+    // width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    // min-width: 200px;
   }

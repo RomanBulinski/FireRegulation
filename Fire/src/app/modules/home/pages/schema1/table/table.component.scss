@@ -3,10 +3,17 @@
     margin:0px;
 }
 
+.widthauto{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    min-width: 200px;
+  }
+
 .cell{
     color: white;
-    height: 50px;
-    width: 100px;
+    // height: 50px;
+    // width: 100px;
     padding: 5px;
     margin:10px;
     background-color: grey;
@@ -14,16 +21,20 @@
 
 .rightcell{
     color: white;
-    height: 50px;
-    width: 100px;
+    // height: 50px;
+    // width: 100px;
     padding: 5px;
     margin:10px;
     background-color: yellowgreen;
 }
 
 .width600{
-    width: 600px;
+    // width: 600px;
     height: 400px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    min-width: 200px;
 }
 
 mat-grid-tile {
