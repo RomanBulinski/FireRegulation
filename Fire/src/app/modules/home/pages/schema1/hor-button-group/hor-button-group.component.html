@@ -3,7 +3,7 @@
 
 <div class="widthauto">
 
-        <mat-grid-list cols = "5" rowHeight = "50px"  >
+        <mat-grid-list cols = "5" rowHeight = "50px" gutterSize="10px" >
                 <mat-grid-tile [colspan] = "1"[rowspan] = "1">        
                     <app-zl-button buttonLabel="ZL I"
                     (click)="switchButtons('ZLI')"
@@ -21,6 +21,6 @@
                     (click)="switchButtons('ZLV')"
                     [buttonOn]="getFromSwitcherValueByKey('ZLV')"></app-zl-button></mat-grid-tile>    
         </mat-grid-list>
+        
 </div>
-
 
