@@ -1,34 +1,26 @@
 
 
-<div class="height400">
 
-        <mat-grid-list cols = "2" rowHeight = "50px"  >
-                <mat-grid-tile [colspan] = "1"[rowspan] = "1">do 4 Kondygnacji</mat-grid-tile>
-                <mat-grid-tile [colspan] = "1"[rowspan] = "1">   <app-height-button  buttonLabel="N"
-                        (click)="switchButtons('N')"
-                        [buttonOn]="getFromSwitcherValueByKey('N')"></app-height-button></mat-grid-tile>
-        
-                <mat-grid-tile [colspan] = "1" [rowspan] = "1">4-9 Kondygnacji</mat-grid-tile>
-                <mat-grid-tile [colspan] = "1" [rowspan] = "1">
-                        <app-height-button  buttonLabel="SW"
-                                (click)="switchButtons('SW')"
-                                [buttonOn]="getFromSwitcherValueByKey('SW')"></app-height-button></mat-grid-tile>
-        
-                <mat-grid-tile [colspan] = "1" [rowspan] = "1">9-18 Kondygnacji / 25-55m</mat-grid-tile>
-                <mat-grid-tile [colspan] = "1" [rowspan] = "1">             
-                        <app-height-button  buttonLabel="W"
-                                (click)="switchButtons('W')"
-                                [buttonOn]="getFromSwitcherValueByKey('W')"></app-height-button></mat-grid-tile>
-        
-                <mat-grid-tile [colspan] = "1" [rowspan] = "1">powyzej 55m</mat-grid-tile>
-                <mat-grid-tile [colspan] = "1" [rowspan] = "1">               
-                        <app-height-button  buttonLabel="WW"
-                                (click)="switchButtons('WW')"
-                                [buttonOn]="getFromSwitcherValueByKey('WW')"></app-height-button></mat-grid-tile>
-        </mat-grid-list>
+
+<div class="grid-container">
+        <div class="grid-item">do 4 Kondygnacji</div>
+        <div class="grid-item"><app-height-button  buttonLabel="N"
+                (click)="switchButtons('N')"
+                [buttonOn]="getFromSwitcherValueByKey('N')"></app-height-button></div>
+
+        <div class="grid-item">4-9 Kondygnacji</div>
+        <div class="grid-item"><app-height-button  buttonLabel="SW"
+                (click)="switchButtons('SW')"
+                [buttonOn]="getFromSwitcherValueByKey('SW')"></app-height-button></div>
+
+        <div class="grid-item">9-18 Kondygnacji / 25-55m</div>
+        <div class="grid-item"><app-height-button  buttonLabel="W"
+                (click)="switchButtons('W')"
+                [buttonOn]="getFromSwitcherValueByKey('W')"></app-height-button></div>
+
+        <div class="grid-item">powyzej 55m</div>
+        <div class="grid-item"><app-height-button  buttonLabel="WW"
+                (click)="switchButtons('WW')"
+                [buttonOn]="getFromSwitcherValueByKey('WW')"></app-height-button></div>
 </div>
-
-
-
-
       

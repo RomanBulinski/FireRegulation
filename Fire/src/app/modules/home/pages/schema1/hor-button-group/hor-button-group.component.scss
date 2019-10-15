@@ -1,17 +1,6 @@
 
 
-
-.widthauto{
-    width: 50%;
-    min-width: 300px;
-    overflow-x: auto;
-    overflow-y: auto;
-    background:blue;
-    }
-
-
-mat-grid-tile {
-    background: white;
-    width: 100%;
+.grid-container {
+    display: grid;
+    grid-template-columns:  auto  auto  auto  auto auto ;
 }
-

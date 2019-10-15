@@ -1,20 +1,11 @@
 
 
-    <mat-grid-list cols = "4" rowHeight = "50px">
-        <mat-grid-tile [colspan] = "1"[rowspan] = "1">1
-        </mat-grid-tile>
-        <mat-grid-tile [colspan] = "3"[rowspan] = "1">
-            <app-hor-button-group (messageEventZL)="receiveZL($event)"></app-hor-button-group>
-        </mat-grid-tile>
-        <mat-grid-tile [colspan] = "1" [rowspan] = "8">    
-            <app-ver-button-gropu (messageEventHeight)="receiveHeight($event)"></app-ver-button-gropu>                  
-        </mat-grid-tile>
-        <mat-grid-tile [colspan] = "3" [rowspan] = "8">
-            <app-table [passInfo]="getInfo(buildingType)"></app-table>    
-        </mat-grid-tile>
-    </mat-grid-list>
-
-
+    <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item"><app-hor-button-group (messageEventZL)="receiveZL($event)"></app-hor-button-group></div>
+        <div class="grid-item"><app-ver-button-gropu (messageEventHeight)="receiveHeight($event)"></app-ver-button-gropu></div>
+        <div class="grid-item"><app-table [passInfo]="getInfo(buildingType)"></app-table> </div>
+    </div>
    
 
   

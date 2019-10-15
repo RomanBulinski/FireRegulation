@@ -1,4 +1,7 @@
-
+.grid-container {
+    display: grid;
+    grid-template-columns:  auto  auto ;
+  }
 
 .cell{  
     color: white;
