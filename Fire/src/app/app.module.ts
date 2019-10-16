@@ -20,6 +20,7 @@ import { MatSliderModule } from '@angular/material/slider';
 
 import {MatGridListModule} from '@angular/material'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { TextruleComponent } from './modules/home/pages/schema1/textrule/textrule.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     VerButtonGropuComponent,
     ZlButtonComponent,
     HeightButtonComponent,
-    TableComponent
+    TableComponent,
+    TextruleComponent
     
   ],
   imports: [
