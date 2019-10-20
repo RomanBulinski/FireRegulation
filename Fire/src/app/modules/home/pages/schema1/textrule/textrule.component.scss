@@ -1,12 +1,10 @@
 
 
-// body, html {
-//     padding: 0;
-//     width: 100vw;
-//     height: 100vh;
-//     background: blue;
-//   }
+p {
+    background: blue;
+}
 
-//   p {
-//     background: blue;
-// }
+.grid-container {
+    display: grid;
+    grid-template-columns:  auto  auto  auto  auto auto auto auto ;
+}
