@@ -2,7 +2,7 @@
 <p>KLASA ODPORNOŚCI OGNIOWEJ</p>
 
 
-  <div *ngIf="showTextForA">
+  <!-- <div *ngIf="showTextForA">
         <p>A</p>
         Głowna konstrukcja nośna : R 240
         Konstrukcja dachu: R 30
@@ -26,7 +26,7 @@
   <div *ngIf="showTextForD">
         <p>D</p>
         dddddddddddddddd
-</div>
+</div> -->
 
 <div class="grid-container">
 
@@ -36,54 +36,46 @@
             <div class="grid-item">Strop</div>
             <div class="grid-item">Ściana zewnetrzna</div>
             <div class="grid-item">Ściana wewnętrzna</div>
-            <div class="grid-item">Przekrycie dachu</div>
+            <div class="grid-item ">Przekrycie dachu</div>
 
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-            <div class="grid-item">7</div>
+            <div [className]="showTextForA ? 'selected' : 'onselected'">"A"</div>
+            <div [className]="showTextForA ? 'selected' : 'onselected'">R 240</div>
+            <div [className]="showTextForA ? 'selected' : 'onselected'">R 30</div>
+            <div [className]="showTextForA ? 'selected' : 'onselected'">REI 120</div>
+            <div [className]="showTextForA ? 'selected' : 'onselected'">EI 120</div>
+            <div [className]="showTextForA ? 'selected' : 'onselected'">EI 60</div>
+            <div [className]="showTextForA ? 'selected' : 'onselected'" >RE 30</div>
 
-            <div class="grid-item">"A"</div>
-            <div class="grid-item">R 240</div>
-            <div class="grid-item">R 30</div>
-            <div class="grid-item">REI 120</div>
-            <div class="grid-item">EI 120</div>
-            <div class="grid-item">EI 60</div>
-            <div class="grid-item">RE 30</div>
+            <div [className]="showTextForB ? 'selected' : 'onselected'">"B"</div>
+            <div [className]="showTextForB ? 'selected' : 'onselected'">R 120</div>
+            <div [className]="showTextForB ? 'selected' : 'onselected'">R 30</div>
+            <div [className]="showTextForB ? 'selected' : 'onselected'">REI 60</div>
+            <div [className]="showTextForB ? 'selected' : 'onselected'">EI 60</div>
+            <div [className]="showTextForB ? 'selected' : 'onselected'">EI 30</div>
+            <div [className]="showTextForB ? 'selected' : 'onselected'">RE 30</div>
 
-            <div class="grid-item">"B"</div>
-            <div class="grid-item">R 120</div>
-            <div class="grid-item">R 30</div>
-            <div class="grid-item">REI 60</div>
-            <div class="grid-item">EI 60</div>
-            <div class="grid-item">EI 30</div>
-            <div class="grid-item">RE 30</div>
+            <div [className]="showTextForC ? 'selected' : 'onselected'">"C"</div>
+            <div [className]="showTextForC ? 'selected' : 'onselected'">R 60</div>
+            <div [className]="showTextForC ? 'selected' : 'onselected'">R 15</div>
+            <div [className]="showTextForC ? 'selected' : 'onselected'">REI 60</div>
+            <div [className]="showTextForC ? 'selected' : 'onselected'">EI 30</div>
+            <div [className]="showTextForC ? 'selected' : 'onselected'">EI 15</div>
+            <div [className]="showTextForC ? 'selected' : 'onselected'">RE 15</div>
 
-            <div class="grid-item">"C"</div>
-            <div class="grid-item">R 60</div>
-            <div class="grid-item">R 15</div>
-            <div class="grid-item">REI 60</div>
-            <div class="grid-item">EI 30</div>
-            <div class="grid-item">EI 15</div>
-            <div class="grid-item">RE 15</div>
+            <div [className]="showTextForD ? 'selected' : 'onselected'">"D"</div>
+            <div [className]="showTextForD ? 'selected' : 'onselected'">R 30</div>
+            <div [className]="showTextForD ? 'selected' : 'onselected'">(-)</div>
+            <div [className]="showTextForD ? 'selected' : 'onselected'">REI 30</div>
+            <div [className]="showTextForD ? 'selected' : 'onselected'">EI 30</div>
+            <div [className]="showTextForD ? 'selected' : 'onselected'">(-)</div>
+            <div [className]="showTextForD ? 'selected' : 'onselected'">(-)</div>
 
-            <div class="grid-item">"D"</div>
-            <div class="grid-item">R 30</div>
-            <div class="grid-item">(-)</div>
-            <div class="grid-item">REI 30</div>
-            <div class="grid-item">EI 30</div>
-            <div class="grid-item">(-)</div>
-            <div class="grid-item">(-)</div>
-
-            <div class="grid-item">"E"</div>
-            <div class="grid-item">(-)</div>
-            <div class="grid-item">(-)</div>
-            <div class="grid-item">(-)</div>
-            <div class="grid-item">(-)</div>
-            <div class="grid-item">(-)</div>
-            <div class="grid-item">(-)</div>
+            <div [className]="showTextForE ? 'selected' : 'onselected'">"E"</div>
+            <div [className]="showTextForE ? 'selected' : 'onselected'">(-)</div>
+            <div [className]="showTextForE ? 'selected' : 'onselected'">(-)</div>
+            <div [className]="showTextForE ? 'selected' : 'onselected'">(-)</div>
+            <div [className]="showTextForE ? 'selected' : 'onselected'">(-)</div>
+            <div [className]="showTextForE ? 'selected' : 'onselected'">(-)</div>
+            <div [className]="showTextForE ? 'selected' : 'onselected'">(-)</div>
 
 </div>

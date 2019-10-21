@@ -6,6 +6,7 @@ import { MatTreeFlatDataSource } from '@angular/material';
   templateUrl: './textrule.component.html',
   styleUrls: ['./textrule.component.scss']
 })
+
 export class TextruleComponent implements OnInit {
 
   @Input() passInfo: string;
