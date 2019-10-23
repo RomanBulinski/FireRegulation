@@ -21,6 +21,10 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatGridListModule} from '@angular/material'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { TextruleComponent } from './modules/home/pages/schema1/textrule/textrule.component';
+import { TablePMComponent } from './modules/home/pages/schema1/table-pm/table-pm.component';
+import { HorButtunPMComponent } from './modules/home/pages/schema1/hor-buttun-pm/hor-buttun-pm.component';
+import { VerButtonGroupPMComponent } from './modules/home/pages/schema1/ver-button-group-pm/ver-button-group-pm.component';
+import { HorButtonGroupPMComponent } from './modules/home/pages/schema1/hor-button-group-pm/hor-button-group-pm.component';
 
 
 @NgModule({
@@ -36,7 +40,11 @@ import { TextruleComponent } from './modules/home/pages/schema1/textrule/textrul
     ZlButtonComponent,
     HeightButtonComponent,
     TableComponent,
-    TextruleComponent
+    TextruleComponent,
+    TablePMComponent,
+    HorButtunPMComponent,
+    VerButtonGroupPMComponent,
+    HorButtonGroupPMComponent
     
   ],
   imports: [
