@@ -1,25 +1,70 @@
 
-<button mat-button (click)="showBudynkiZL()">Budynki ZL</button>
+<button mat-mini-fab color (click)="showBudynkiZL()">ZL</button>
+<button mat-mini-fab color (click)="showBudynkiPMiIN()">PM i IN</button>
 
-    <div class="grid-container" *ngIf="isshowBudynkiZL">
-        <div class="grid-item"></div>
-        <div class="grid-item"><app-hor-button-group (messageEventZL)="receiveZL($event)"></app-hor-button-group></div>
-        <div class="grid-item"><app-ver-button-gropu (messageEventHeight)="receiveHeight($event)"></app-ver-button-gropu></div>
-        <div class="grid-item"><app-table [passInfo]="getInfo(buildingType)"></app-table> </div>
+<div class="grid-container" *ngIf="isshowBudynkiZL">
+    <div class="grid-item"></div>
+    <div class="grid-item"><app-hor-button-group (messageEventZL)="receiveZL($event)"></app-hor-button-group></div>
+    <div class="grid-item"><app-ver-button-gropu (messageEventHeight)="receiveHeight($event)"></app-ver-button-gropu></div>
+    <div class="grid-item"><app-table [passInfo]="getInfo(buildingType)"></app-table> </div>
+</div>
+
+<div class="grid-container" *ngIf="isshowBudynkiPM">
+    <div class="grid-item"></div>
+    <div class="grid-item"><app-hor-button-group-pm ></app-hor-button-group-pm></div>
+    <div class="grid-item"><app-ver-button-group-pm></app-ver-button-group-pm></div>
+    <div class="grid-item"><app-table-pm></app-table-pm></div>
+</div>
+
+
+
+
+<div class="grid-container" *ngIf="isshowBudynkiPM">
+    <div class="grid-item"></div>
+    <div class="grid-item"><p>
+            <mat-button-toggle-group  #hb="matButtonToggleGroup"  name="fontStyle" aria-label="Font Style">
+                <mat-button-toggle value="1Kondygnacja">1 Kondygnacja</mat-button-toggle>
+                <mat-button-toggle value="N">N</mat-button-toggle>
+                <mat-button-toggle value="SW">SW</mat-button-toggle>
+                <mat-button-toggle value="W">W</mat-button-toggle>
+                <mat-button-toggle value="WW">WW</mat-button-toggle>
+            </mat-button-toggle-group>
+        </p>
     </div>
-
-<button mat-button (click)="showBudynkiPMiIN()">Budynki PM i IN</button>
-
-    <div class="grid-container" *ngIf="isshowBudynkiPM">
-        <div class="grid-item"></div>
-        <div class="grid-item"><app-hor-button-group-pm ></app-hor-button-group-pm></div>
-        <div class="grid-item"><app-ver-button-group-pm></app-ver-button-group-pm></div>
-        <div class="grid-item"><app-table-pm></app-table-pm></div>
+    <div class="grid-item"><p>
+            <mat-button-toggle-group  
+            #vb="matButtonToggleGroup"  
+            name="fontStyle" 
+            aria-label="Font Style" 
+            vertical
+            [value]="selectedVal"
+            (change)="onValChange(vb.value)">
+                <mat-button-toggle value="bold"> Q<=500 </mat-button-toggle>
+                <mat-button-toggle value="italic">500<Q<=1000</mat-button-toggle>
+                <mat-button-toggle value="underline">1000<Q<=2000</mat-button-toggle>
+                <mat-button-toggle value="underline">2000<Q<=4000</mat-button-toggle>
+                <mat-button-toggle value="underline">4000<Q</mat-button-toggle>
+            </mat-button-toggle-group>
+        </p>
     </div>
-
-<p>Klasa odpornosci pozarowej</p>
-    <div class="grid-container">
-        <div class="grid-item"></div>
-        <app-textrule [passInfo]="getInfo(buildingType)"></app-textrule >
+    <div class="grid-item">
+        <div >Selected value: {{hb.value}}</div>
+        <div >Selected value: {{vb.value}}</div>
+        <div >Selected value: {{selectedVal}}</div>
+        
+        <app-table-pm></app-table-pm>
     </div>
-  
+</div>
+
+
+
+<div class="grid-container">
+    <div class="grid-item"></div>
+    <app-textrule [passInfo]="getInfo(buildingType)"></app-textrule >
+</div>
+
+
+
+
+
+

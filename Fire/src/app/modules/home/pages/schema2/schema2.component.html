@@ -8,3 +8,19 @@
     <div class="grid-item">3</div>
     <div class="grid-item">4</div>
 </div>
+
+<mat-button-toggle-group #group="matButtonToggleGroup">
+        <mat-button-toggle value="left" aria-label="Text align left">
+         1
+        </mat-button-toggle>
+        <mat-button-toggle value="center" aria-label="Text align center">
+          2
+        </mat-button-toggle>
+        <mat-button-toggle value="right" aria-label="Text align right">
+         3
+        </mat-button-toggle>
+        <mat-button-toggle value="justify" disabled aria-label="Text align justify">
+          4
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+<div class="example-selected-value">Selected value: {{group.value}}</div>

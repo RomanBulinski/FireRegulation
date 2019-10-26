@@ -8,20 +8,28 @@ import { ɵINTERNAL_BROWSER_PLATFORM_PROVIDERS } from '@angular/platform-browser
 })
 export class Schema1Component implements OnInit {
 
+  zltype: string;
+  heighttype: string;
+  buildingType: string; 
   public isshowBudynkiZL: boolean = false;
   public isshowBudynkiPM: boolean = false;
+  public selectedVal: String;
+
 
   constructor() { }
 
   ngOnInit() {
+    this.selectedVal='fffffff'
   }
 
   ngOnChanges() {
+    
   }
 
-  zltype: string;
-  heighttype: string;
-  buildingType: string;  
+  public onValChange(val: string) {
+    this.selectedVal = val;
+  }
+  
 
   receiveZL($event) {
     this.zltype = $event;
@@ -40,18 +48,16 @@ export class Schema1Component implements OnInit {
   }
 
   showBudynkiPMiIN(){
-    if(this.isshowBudynkiPM == true){
-      this.isshowBudynkiPM = false
-    }else if(this.isshowBudynkiPM == false){
+    if(this.isshowBudynkiPM == false){
       this.isshowBudynkiPM = true
+      this.isshowBudynkiZL = false
     }
   }
 
   showBudynkiZL(){
-    if(this.isshowBudynkiZL == true){
-      this.isshowBudynkiZL = false
-    }else if(this.isshowBudynkiZL == false){
+    if(this.isshowBudynkiZL == false){
       this.isshowBudynkiZL = true
+      this.isshowBudynkiPM  = false
     }
   }
 

@@ -24,6 +24,7 @@ import { TextruleComponent } from './modules/home/pages/schema1/textrule/textrul
 import { TablePMComponent } from './modules/home/pages/schema1/table-pm/table-pm.component';
 import { VerButtonGroupPMComponent } from './modules/home/pages/schema1/ver-button-group-pm/ver-button-group-pm.component';
 import { HorButtonGroupPMComponent } from './modules/home/pages/schema1/hor-button-group-pm/hor-button-group-pm.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { HorButtonGroupPMComponent } from './modules/home/pages/schema1/hor-butt
     VerButtonGroupPMComponent,
     HorButtonGroupPMComponent
     
+    
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,8 @@ import { HorButtonGroupPMComponent } from './modules/home/pages/schema1/hor-butt
     MatSliderModule,
     MatGridListModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonToggleModule
 
   ],
   providers: [],
