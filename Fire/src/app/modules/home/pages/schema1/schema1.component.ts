@@ -8,6 +8,9 @@ import { ɵINTERNAL_BROWSER_PLATFORM_PROVIDERS } from '@angular/platform-browser
 })
 export class Schema1Component implements OnInit {
 
+  public isshowBudynkiZL: boolean = false;
+  public isshowBudynkiPM: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -35,4 +38,26 @@ export class Schema1Component implements OnInit {
   getInfo(info:string){
     return info;
   }
+
+  showBudynkiPMiIN(){
+    if(this.isshowBudynkiPM == true){
+      this.isshowBudynkiPM = false
+    }else if(this.isshowBudynkiPM == false){
+      this.isshowBudynkiPM = true
+    }
+  }
+
+  showBudynkiZL(){
+    if(this.isshowBudynkiZL == true){
+      this.isshowBudynkiZL = false
+    }else if(this.isshowBudynkiZL == false){
+      this.isshowBudynkiZL = true
+    }
+  }
+
+
+
+
+
+
 }

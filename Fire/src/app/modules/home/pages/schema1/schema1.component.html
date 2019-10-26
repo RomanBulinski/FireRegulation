@@ -1,18 +1,22 @@
 
-<p>Budynki ZL</p>
-    <div class="grid-container">
+<button mat-button (click)="showBudynkiZL()">Budynki ZL</button>
+
+    <div class="grid-container" *ngIf="isshowBudynkiZL">
         <div class="grid-item"></div>
         <div class="grid-item"><app-hor-button-group (messageEventZL)="receiveZL($event)"></app-hor-button-group></div>
         <div class="grid-item"><app-ver-button-gropu (messageEventHeight)="receiveHeight($event)"></app-ver-button-gropu></div>
         <div class="grid-item"><app-table [passInfo]="getInfo(buildingType)"></app-table> </div>
     </div>
-<p>Budynki PM i IN</p>
-    <div class="grid-container">
+
+<button mat-button (click)="showBudynkiPMiIN()">Budynki PM i IN</button>
+
+    <div class="grid-container" *ngIf="isshowBudynkiPM">
         <div class="grid-item"></div>
         <div class="grid-item"><app-hor-button-group-pm ></app-hor-button-group-pm></div>
         <div class="grid-item"><app-ver-button-group-pm></app-ver-button-group-pm></div>
         <div class="grid-item"><app-table-pm></app-table-pm></div>
     </div>
+
 <p>Klasa odpornosci pozarowej</p>
     <div class="grid-container">
         <div class="grid-item"></div>
