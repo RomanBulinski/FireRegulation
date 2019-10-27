@@ -2,7 +2,7 @@
  .grid-container {
     display: grid;
     grid-template-columns: 25% auto ;
-    height: 250px;
+
   }
 
   mat-button-toggle-group {
@@ -11,4 +11,8 @@
 
   .example-selected-value {
     margin: 15px 0;
+  }
+
+  .budynkiPM {
+    background-color: burlywood;
   }
