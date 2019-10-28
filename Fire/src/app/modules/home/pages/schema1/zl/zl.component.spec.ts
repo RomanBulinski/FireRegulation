@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VerButtonGroupPMComponent } from './ver-button-group-pm.component';
+import { ZlComponent } from './zl.component';
 
-describe('VerButtonGroupPMComponent', () => {
-  let component: VerButtonGroupPMComponent;
-  let fixture: ComponentFixture<VerButtonGroupPMComponent>;
+describe('ZlComponent', () => {
+  let component: ZlComponent;
+  let fixture: ComponentFixture<ZlComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VerButtonGroupPMComponent ]
+      declarations: [ ZlComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VerButtonGroupPMComponent);
+    fixture = TestBed.createComponent(ZlComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

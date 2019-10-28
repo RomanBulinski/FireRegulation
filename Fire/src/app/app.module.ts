@@ -8,11 +8,11 @@ import { Schema1Component } from './modules/home/pages/schema1/schema1.component
 import { Schema2Component } from './modules/home/pages/schema2/schema2.component';
 import { Schema3Component } from './modules/home/pages/schema3/schema3.component';
 import { ContactComponent } from './modules/home/pages/contact/contact.component';
-import { HorButtonGroupComponent } from './modules/home/pages/schema1/hor-button-group/hor-button-group.component';
-import { VerButtonGropuComponent } from './modules/home/pages/schema1/ver-button-gropu/ver-button-gropu.component';
-import { ZlButtonComponent } from './modules/home/pages/schema1/hor-button-group/zl-button/zl-button.component';
-import { HeightButtonComponent } from './modules/home/pages/schema1/ver-button-gropu/height-button/height-button.component';
-import { TableComponent } from './modules/home/pages/schema1/table/table.component';
+import { HorButtonGroupComponent } from './modules/home/pages/schema1/zl/hor-button-group/hor-button-group.component';
+import { VerButtonGropuComponent } from './modules/home/pages/schema1/zl/ver-button-gropu/ver-button-gropu.component';
+import { ZlButtonComponent } from './modules/home/pages/schema1/zl/hor-button-group/zl-button/zl-button.component';
+import { HeightButtonComponent } from './modules/home/pages/schema1/zl/ver-button-gropu/height-button/height-button.component';
+import { TableComponent } from './modules/home/pages/schema1/zl/table/table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
@@ -25,6 +25,9 @@ import { TablePMComponent } from './modules/home/pages/schema1/table-pm/table-pm
 import { VerButtonGroupPMComponent } from './modules/home/pages/schema1/ver-button-group-pm/ver-button-group-pm.component';
 import { HorButtonGroupPMComponent } from './modules/home/pages/schema1/hor-button-group-pm/hor-button-group-pm.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { ZlComponent } from './modules/home/pages/schema1/zl/zl.component';
+import { PmComponent } from './modules/home/pages/schema1/pm/pm.component';
+import { KlasatableComponent } from './modules/home/pages/schema1/klasatable/klasatable.component';
 
 
 @NgModule({
@@ -43,7 +46,10 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     TextruleComponent,
     TablePMComponent,
     VerButtonGroupPMComponent,
-    HorButtonGroupPMComponent
+    HorButtonGroupPMComponent,
+    ZlComponent,
+    PmComponent,
+    KlasatableComponent
     
     
   ],

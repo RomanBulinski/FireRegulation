@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TablePMComponent } from './table-pm.component';
+import { PmComponent } from './pm.component';
 
-describe('TablePMComponent', () => {
-  let component: TablePMComponent;
-  let fixture: ComponentFixture<TablePMComponent>;
+describe('PmComponent', () => {
+  let component: PmComponent;
+  let fixture: ComponentFixture<PmComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TablePMComponent ]
+      declarations: [ PmComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TablePMComponent);
+    fixture = TestBed.createComponent(PmComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
