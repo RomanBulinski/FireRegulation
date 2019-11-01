@@ -3,7 +3,7 @@
 <button mat-mini-fab color (click)="showBudynkiPMiIN()">PM i IN</button>
 
 <div *ngIf="isshowBudynkiZL">
-        <div class="grid-item"><app-zl >budynki zagrozenia ludzi</app-zl></div>
+        <div class="grid-item"><app-zl  (messageEventBuildingType)="receiveZL($event)">budynki zagrozenia ludzi</app-zl></div>
 </div>
 
 <div *ngIf="isshowBudynkiPM">
@@ -14,6 +14,7 @@
     <div class="grid-item"></div>
     <app-textrule [passInfo]="getInfo(buildingType)"></app-textrule >
 </div>
+
 
 
 

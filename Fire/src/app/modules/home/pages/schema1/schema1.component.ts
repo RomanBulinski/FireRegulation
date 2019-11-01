@@ -8,39 +8,25 @@ import { ɵINTERNAL_BROWSER_PLATFORM_PROVIDERS } from '@angular/platform-browser
 })
 export class Schema1Component implements OnInit {
 
-  zltype: string;
-  heighttype: string;
-  buildingType: string; 
+  public buildingType: string;
   public isshowBudynkiZL: boolean = false;
   public isshowBudynkiPM: boolean = false;
   public selectedVal: String;
 
-
   constructor() { }
 
   ngOnInit() {
-    this.selectedVal='fffffff'
   }
 
   ngOnChanges() {
-    
   }
 
   public onValChange(val: string) {
     this.selectedVal = val;
   }
   
-
   receiveZL($event) {
-    this.zltype = $event;
-    this.buildingType = $event+"_"+this.heighttype;
-    // console.log(this.zltype);
-  }
-
-  receiveHeight($event) {
-    this.heighttype = $event;
-    this.buildingType = this.zltype+"_"+$event;
-    // console.log(this.heighttype);
+    this.buildingType = $event;
   }
 
   getInfo(info:string){
@@ -60,10 +46,5 @@ export class Schema1Component implements OnInit {
       this.isshowBudynkiPM  = false
     }
   }
-
-
-
-
-
 
 }

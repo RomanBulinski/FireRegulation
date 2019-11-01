@@ -1,25 +1,29 @@
-<p>zl works!</p>
-
-
+<p>Klasa odporności pożarowej budynków "zagrożenia ludzi"</p>
 
 <div class="grid-container" >
         <div class="grid-item"></div>
+        <!-- buttony poziome w head tabeli -->
         <div class="grid-item">
                 <p>
-                <mat-button-toggle-group  #hb="matButtonToggleGroup"  name="fontStyle" aria-label="Font Style">
-                        <mat-button-toggle value="ZL I">ZL I</mat-button-toggle>
-                        <mat-button-toggle value="ZL II">ZL II</mat-button-toggle>
-                        <mat-button-toggle value="ZL III">ZL III</mat-button-toggle>
-                        <mat-button-toggle value="ZL IV">ZL IV</mat-button-toggle>
-                        <mat-button-toggle value="ZL V">ZL V</mat-button-toggle>
+                <mat-button-toggle-group  #hb="matButtonToggleGroup"  name="fontStyle" aria-label="Font Style"
+                                [value]="selectedZL" 
+                                (change)="onZLChange(hb.value)">
+                        <mat-button-toggle value="ZLI">ZL I</mat-button-toggle>
+                        <mat-button-toggle value="ZLII">ZL II</mat-button-toggle>
+                        <mat-button-toggle value="ZLIII">ZL III</mat-button-toggle>
+                        <mat-button-toggle value="ZLIV">ZL IV</mat-button-toggle>
+                        <mat-button-toggle value="ZLV">ZL V</mat-button-toggle>
                 </mat-button-toggle-group>
                 </p>
         </div>
 
+        <!-- buttony pionowe  z lewej strony -->
         <div class="grid-item">
                 <p>
-                <mat-button-toggle-group  #vb="matButtonToggleGroup"  name="fontStyle" 
-                aria-label="Font Style" vertical [value]="selectedVal" (change)="onValChange(vb.value)">
+                <mat-button-toggle-group  #vb="matButtonToggleGroup" name="fontStyle" aria-label="Font Style" 
+                                vertical 
+                                [value]="selectedHeight" 
+                                (change)="onHeightChange(vb.value)">
                         <mat-button-toggle value="N">N</mat-button-toggle>
                         <mat-button-toggle value="SW">SW</mat-button-toggle>
                         <mat-button-toggle value="W">W</mat-button-toggle>
@@ -27,12 +31,8 @@
                 </mat-button-toggle-group>
                 </p>
         </div>
+         <!-- klasy odpornosci pozarowej -->
         <div class="grid-table">
-                <div >Selected value: {{hb.value}}</div>
-                <div >Selected value: {{vb.value}}</div>
-                <div >Selected value: {{selectedVal}}</div>
-                <div >Selected value: {{selectedVal}}</div>
-                <div >Selected value: {{selectedVal}}</div>
 
                 <div  [className]="getValueFromTable('ZLI_N') ? 'rightcell' : 'cell'">D,C,B</div>
                 <div  [className]="getValueFromTable('ZLII_N') ? 'rightcell' : 'cell'">D,C,B</div>
