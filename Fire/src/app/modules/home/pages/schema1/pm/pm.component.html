@@ -4,7 +4,7 @@
         <div class="grid-item"></div>
         <div class="grid-item"><p>
                 <mat-button-toggle-group  #hb="matButtonToggleGroup"  name="fontStyle" aria-label="Font Style">
-                    <mat-button-toggle value="1Kondygnacja">1 Kondygnacja</mat-button-toggle>
+                    <mat-button-toggle value="1Kond">1 Kondygnacja</mat-button-toggle>
                     <mat-button-toggle value="N">N</mat-button-toggle>
                     <mat-button-toggle value="SW">SW</mat-button-toggle>
                     <mat-button-toggle value="W">W</mat-button-toggle>
@@ -25,35 +25,35 @@
         </div>
         <div class="grid-table">
 
-            <div  >E</div>
-            <div  >D</div>
-            <div  >C</div>
-            <div  >B</div>
-            <div  >B</div>
+            <div  [className]="getValueFromTable('1Kond_499') ? 'rightcell' : 'cell'">E</div>
+            <div  [className]="getValueFromTable('N_499') ? 'rightcell' : 'cell'">D</div>
+            <div  [className]="getValueFromTable('SW_499') ? 'rightcell' : 'cell'">C</div>
+            <div  [className]="getValueFromTable('W_499') ? 'rightcell' : 'cell'">B</div>
+            <div  [className]="getValueFromTable('WW_499') ? 'rightcell' : 'cell'">B</div>
 
-            <div  >D</div>
-            <div  >D</div>
-            <div  >C</div>
-            <div  >B</div>
-            <div  >B</div>
+            <div  [className]="getValueFromTable('1Kond_501') ? 'rightcell' : 'cell'">D</div>
+            <div  [className]="getValueFromTable('N_501') ? 'rightcell' : 'cell'">D</div>
+            <div  [className]="getValueFromTable('SW_501') ? 'rightcell' : 'cell'">C</div>
+            <div  [className]="getValueFromTable('W_501') ? 'rightcell' : 'cell'">B</div>
+            <div  [className]="getValueFromTable('WW_501') ? 'rightcell' : 'cell'">B</div>
 
-            <div  >C</div>
-            <div  >C</div>
-            <div  >C</div>
-            <div  >B</div>
-            <div  >B</div>
+            <div  [className]="getValueFromTable('1Kond_1001') ? 'rightcell' : 'cell'">C</div>
+            <div  [className]="getValueFromTable('N_1001') ? 'rightcell' : 'cell'">C</div>
+            <div  [className]="getValueFromTable('SW_1001') ? 'rightcell' : 'cell'">C</div>
+            <div  [className]="getValueFromTable('W_1001') ? 'rightcell' : 'cell'">B</div>
+            <div  [className]="getValueFromTable('WW_1001') ? 'rightcell' : 'cell'">B</div>
 
-            <div  >B</div>
-            <div  >B</div>
-            <div  >B</div>
-            <div  >*</div>
-            <div  >*</div>
+            <div  [className]="getValueFromTable('1Kond_2001') ? 'rightcell' : 'cell'">B</div>
+            <div  [className]="getValueFromTable('N_2001') ? 'rightcell' : 'cell'">B</div>
+            <div  [className]="getValueFromTable('SW_2001') ? 'rightcell' : 'cell'">B</div>
+            <div  [className]="getValueFromTable('W_2001') ? 'rightcell' : 'cell'">*</div>
+            <div  [className]="getValueFromTable('WW_2001') ? 'rightcell' : 'cell'">*</div>
 
-            <div  >A</div>
-            <div  >A</div>
-            <div  >A</div>
-            <div  >*</div>
-            <div  >*</div>
+            <div  [className]="getValueFromTable('1Kond_4001') ? 'rightcell' : 'cell'">A</div>
+            <div  [className]="getValueFromTable('N_4001') ? 'rightcell' : 'cell'">A</div>
+            <div  [className]="getValueFromTable('SW_4001') ? 'rightcell' : 'cell'">A</div>
+            <div  [className]="getValueFromTable('W_4001') ? 'rightcell' : 'cell'">*</div>
+            <div  [className]="getValueFromTable('WW_4001') ? 'rightcell' : 'cell'">*</div>
 
         </div>
 </div>
