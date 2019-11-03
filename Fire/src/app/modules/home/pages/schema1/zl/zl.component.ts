@@ -7,8 +7,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ZlComponent implements OnInit {
 
-  public zl: string;
-  public height: string;
+  // public zl: string;
+  // public height: string;
   public buildingType: string;
   public selectedZL: String;
   public selectedHeight: String;
