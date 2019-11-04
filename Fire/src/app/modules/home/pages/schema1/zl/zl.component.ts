@@ -7,8 +7,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ZlComponent implements OnInit {
 
-  // public zl: string;
-  // public height: string;
   public buildingType: string;
   public selectedZL: String;
   public selectedHeight: String;
@@ -39,7 +37,7 @@ export class ZlComponent implements OnInit {
 
   @Output()  messageEventBuildingType = new EventEmitter<string>();
 
-  sendHeightType() {
+  sendBT() {
     this.messageEventBuildingType.emit(String(this.buildingType));
   }
 
@@ -48,7 +46,7 @@ export class ZlComponent implements OnInit {
     this.setBuildingType() 
     this.setAllFalseInTable()
     this.setValueInTable(this.buildingType)
-    this.sendHeightType()
+    this.sendBT()
   }
 
   public onZLChange(val: string) {
@@ -56,7 +54,7 @@ export class ZlComponent implements OnInit {
     this.setBuildingType() 
     this.setAllFalseInTable()
     this.setValueInTable(this.buildingType)
-    this.sendHeightType()
+    this.sendBT()
   }
 
   public setBuildingType() {

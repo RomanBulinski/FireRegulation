@@ -7,7 +7,7 @@
 </div>
 
 <div *ngIf="isshowBudynkiPM">
-        <div class="grid-item"><app-pm >pomieszczenia magazynowe</app-pm></div>
+        <div class="grid-item"><app-pm (messageEventBuildingType)="receivePM($event)">pomieszczenia magazynowe</app-pm></div>
 </div>
 
 <div class="grid-container">

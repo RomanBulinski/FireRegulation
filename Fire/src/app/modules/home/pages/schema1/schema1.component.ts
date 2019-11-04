@@ -29,6 +29,11 @@ export class Schema1Component implements OnInit {
     this.buildingType = $event;
   }
 
+  receivePM($event) {
+    this.buildingType = $event;
+  }
+
+
   getInfo(info:string){
     return info;
   }

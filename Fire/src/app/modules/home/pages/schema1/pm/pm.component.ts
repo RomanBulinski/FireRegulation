@@ -17,9 +17,9 @@ export class PmComponent implements OnInit {
   ngOnInit() {
   }
 
-  @Output()  messageEventBuildingType = new EventEmitter<string>();
+  @Output() messageEventBuildingType = new EventEmitter<string>();
 
-  sendHeightType() {
+  sendBT() {
     this.messageEventBuildingType.emit(String(this.buildingType));
   }
 
@@ -28,6 +28,7 @@ export class PmComponent implements OnInit {
     this.setBuildingType() 
     this.setAllFalseInPMTable()
     this.setValueInPMTable(this.buildingType)
+    this.sendBT()
   }
 
   public onQtypeChange(val: string) {
@@ -35,6 +36,7 @@ export class PmComponent implements OnInit {
     this.setBuildingType();
     this.setAllFalseInPMTable() 
     this.setValueInPMTable(this.buildingType)
+    this.sendBT()
   }
 
   public pMTable ={   Kond1_Q499:false, N_Q499:false, SW_Q499:false, W_Q499:false, WW_Q499:false,
