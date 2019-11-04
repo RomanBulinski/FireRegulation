@@ -5,10 +5,11 @@
         <div class="grid-item"><p>
                 <!-- buttony poziome w head tabeli -->
                 <mat-button-toggle-group  #hb="matButtonToggleGroup"  name="fontStyle" aria-label="Font Style"
+                                     
                         [value]="selectedHeight" 
                         (change)="onHeightChange(hb.value)">
-                    <mat-button-toggle value="Kond1">1 Kondygnacja</mat-button-toggle>
-                    <mat-button-toggle value="N">N</mat-button-toggle>
+                    <mat-button-toggle value="Kond1" >1 Kondygnacja</mat-button-toggle>
+                    <mat-button-toggle value="N" >N</mat-button-toggle>
                     <mat-button-toggle value="SW">SW</mat-button-toggle>
                     <mat-button-toggle value="W">W</mat-button-toggle>
                     <mat-button-toggle value="WW">WW</mat-button-toggle>
@@ -62,3 +63,6 @@
 
         </div>
 </div>
+
+
+  
