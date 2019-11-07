@@ -17,6 +17,7 @@ import { TextruleComponent } from './modules/home/pages/schema1/textrule/textrul
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { ZlComponent } from './modules/home/pages/schema1/zl/zl.component';
 import { PmComponent } from './modules/home/pages/schema1/pm/pm.component';
+import { ContService } from "./modules/home/pages/contact/cont.service";
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { PmComponent } from './modules/home/pages/schema1/pm/pm.component';
     MatButtonToggleModule
 
   ],
-  providers: [],
+  providers: [ContService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
